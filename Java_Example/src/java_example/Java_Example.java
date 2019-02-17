@@ -1,8 +1,6 @@
-
+// Абдулов Тимур 2019 
 package java_example; 
-
-import java.lang.Exception; 
-
+ 
 
 public class Java_Example { 
     public static void main(String[] args) { 
@@ -106,4 +104,6 @@ class Интерпретатор {
      }
      return  Рез;
     }
+
+
 }           
