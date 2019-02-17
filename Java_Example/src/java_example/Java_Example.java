@@ -1,8 +1,13 @@
+
 package java_example; 
+
+import java.lang.Exception; 
+
+
 public class Java_Example { 
     public static void main(String[] args) { 
        Интерпретатор интерпретатор = new Интерпретатор ();   
-       интерпретатор.Выполнить("A=1 B=2 C=3 D=4 E=A+B+C+D E"); 
+       интерпретатор.Выполнить("A=1 B=2 C=3 D=4 E=A+B*C+D E"); 
     }  
 }
 
@@ -91,8 +96,13 @@ class Интерпретатор {
      Про=Исходник+"$";
      Нач=0;
      Кон=0;
-     while (Сло().charAt(Нач)!='$'){ 
-         Рез=Ско();   
+     try{
+     while (Нач<Про.length()-1) {
+     Рез=Плю();
+     System.out.println(Рез);
+     }
+     } catch(Exception e){
+     System.out.println("Ошибка");    
      }
      return  Рез;
     }
